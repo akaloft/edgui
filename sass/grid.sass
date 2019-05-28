@@ -1,0 +1,37 @@
+@import functions
+@import variables
+
+.container
+    margin: 0 auto
+    @if $containerWidth and $containerPadding != null
+        @include container($containerWidth,$containerPadding)
+    @else
+        @include container(112rem,0 2rem)
+    position: relative
+
+.row
+    display: flex
+    padding: 0
+    width: 100%
+    flex-wrap: nowrap
+    &.center
+        align-items: center
+.ed
+    display: block
+    flex: 1 1 auto
+    margin-left: 0
+    max-width: 100%
+    width: 100%
+
+@media (max-width:40rem)
+    .m-column
+        flex-direction: column
+    @for $i from 1 through 3
+        .order-#{$i}
+            order: $i
+
+@media (min-width: 40rem)
+    @for $i from 1 through $gridColumn
+        .ed-#{$i}
+            @include flexWidth($i)
+        

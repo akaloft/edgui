@@ -1,0 +1,188 @@
+@import base
+@import grid
+@import functions
+@import variables
+
+figure
+    position: $pr
+    figcaption
+        position: $a
+        bottom: 0
+        left: 0
+        padding: 10px 15px
+        background: transparentize(#c9312c,.4)
+        color: #fff
+        font-weight: 200
+        display: block
+
+#header
+    padding: 20px 0
+    border-bottom: 1px solid #e1e1e1
+    h1
+        a
+            color: #000
+        span
+            display: $b
+            font-weight: 200
+            font-size: 12px
+            &.title
+                font-weight: 600
+                font-size: 24px
+                margin-bottom: 4px
+            &.description
+                letter-spacing: .2px
+    .headWrap
+        margin: 15px 0 0
+    #search
+        color: #434343
+        font-size: 16px
+    .social
+        display: $i
+        margin-left: 20px
+        a
+            color: #434343
+            display: inline-block
+            margin-right: 7px
+#mainMenu
+    button
+        display: none
+    ul
+        margin: 2px 0 0
+        padding: 0
+        list-style-type: none
+        li
+            float: left
+            display: $b
+            position: $pr
+            margin-right: 5px
+            a
+                color: #000000
+                display: block
+                padding: 10px 15px
+            &:before,
+            &:after
+                display: $i
+                position: $a
+                top: 4px
+                opacity: 0
+                font-size: 24px
+                color: transparentize(#c9312c,.4)
+                @include transition(.3s,ease-in,all)
+            &:before
+                content: "{"
+                left: 0
+            &:after
+                content: "}"
+                right: 0
+            &:hover,
+                &:before,
+                &:after
+                    opacity: 1
+                &:before
+                    left: 5px
+                &:after
+                    right: 5px
+            &.active
+                &:before,
+                &:after
+                    opacity: 1
+
+
+#home
+    margin-top: 60px
+
+.post
+    font-size: 20px
+    font-weight: 300
+    line-height: 1.8
+    margin-bottom: 100px
+    position: $pr
+    .postHeader
+        text-align: center
+    a[rel~="category"]
+        color: transparentize(#c9312c,.4)
+        display: inline-block
+    h1
+        a
+            color: #505050
+            display: block
+            font-weight: 200
+    time
+        font-size: 13px
+        color: #333
+    .description
+        margin: 10px 0
+        font-weight: 300
+        font-size: 16px
+        padding: 0 15px 15px
+    .articleBody
+        margin-top: 25px
+        p
+            font-size: 18px
+            margin: 10px 0 0
+            line-height: 1.6
+            font-weight: 200
+    .devami
+        padding: 7px 0
+        text-align: center
+        a
+            color: transparentize(#c9312c,.4)
+            font-weight: 200
+            display: inline-block
+            position: relative
+            &:before,
+            &:after
+                position: $a
+                color: transparentize(#000,.81)
+                font-weight: 200
+            &:before
+                content: "{"
+                left: -15px
+            &:after
+                content: "}"
+                right: -15px
+    footer
+        display: none
+
+
+@media (max-width:40rem)
+    #header
+        position: $pr
+        padding-top: 0
+        padding-bottom: 10px
+        .row
+            justify-content: space-between
+            align-items: baseline
+    #mainMenu
+        button
+            border: none
+            background: none
+            cursor: pointer
+            i
+                font-size: 16px
+                position: relative
+                top: .5px
+            span
+                font-size: 15px
+                font-weight: 300
+                display: inline-block
+                margin-left: 3px
+        ul
+            display: none
+            position: absolute
+            width: 100%
+            top: 70px
+            left: 0
+            background: rgb(43, 43, 47)
+            z-index: 9999
+            li
+                float: none
+                border-bottom: 1px solid transparentize(#000,.7)
+                margin-right: 0
+                a
+                    color: #fff
+                &:hover
+                    background: transparentize(#c9312c,.4)
+                &:before,
+                &:after
+                    display: none

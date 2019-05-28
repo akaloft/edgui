@@ -1,0 +1,77 @@
+@import variables
+
+*,
+*:after,
+*:before
+	box-sizing: inherit
+html
+	box-sizing: border-box
+	font-size: 62.5%
+
+body
+	font-size: 1.6em
+	line-height: 1.6
+	font-family: 'Kodchasan', sans-serif
+	color: #515151
+a
+	text-decoration: none
+
+p
+	margin-top: 0
+	margin-bottom: .5rem
+
+b,
+strong
+	font-weight: bold
+.tr
+	text-align: right
+.tl
+	text-align: left
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	letter-spacing: -.1rem
+	margin-bottom: 1rem
+	margin-top: 0
+	line-height: 1.1
+	
+@while $heading > 0
+	h#{$heading}
+		font-size: $defaultRem - ($heading * .5)
+	$heading: $heading - 1
+
+//Image
+.img-responsive
+	max-width: 100%
+	display: block
+figure
+	margin: 0
+
+
+//Clearfix
+.clearfix
+	&:after
+		clear: both
+		content: ' '
+		display: table
+.fl
+	float: $l
+.fr
+	float: $r
+
+//form elements
+textarea
+	min-height: 4rem
+label
+	display: block
+	font-size: 1.4rem
+	margin-bottom: .5rem
+
+hr
+	border: 0
+	border-top: .1rem solid #ddd
+	margin: 2rem 0

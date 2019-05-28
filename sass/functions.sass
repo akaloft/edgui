@@ -1,0 +1,16 @@
+=transition($duration,$type,$element)
+    transition: $duration $type $element
+    -webkit-transition: $duration $type $element
+
+
+//Grid Functions
+=flexWidth($width)
+    max-width: ($width * $grid)
+    flex: 0 0 ($width * $grid)
+=container($maxWidth,$padding)
+    max-width: $maxWidth
+    padding: $padding
+
+=makeGrid($column)
+    max-width: ($width*$grid)
+    flex:  0 0 ($width*$grid)
