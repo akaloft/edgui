@@ -1,0 +1,148 @@
+*,
+*:after,
+*:before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6em;
+  line-height: 1.6;
+  font-family: "Roboto";
+  color: #515151; }
+
+a {
+  text-decoration: none; }
+
+p {
+  margin-top: 0;
+  margin-bottom: .5rem; }
+
+b,
+strong {
+  font-weight: bold; }
+
+.tr {
+  text-align: right; }
+
+.tl {
+  text-align: left; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -.1rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  line-height: 1.1; }
+
+h6 {
+  font-size: 2rem; }
+
+h5 {
+  font-size: 2.5rem; }
+
+h4 {
+  font-size: 3rem; }
+
+h3 {
+  font-size: 3.5rem; }
+
+h2 {
+  font-size: 4rem; }
+
+h1 {
+  font-size: 4.5rem; }
+
+.img-responsive {
+  max-width: 100%;
+  display: block; }
+
+figure {
+  margin: 0; }
+
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: table; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+textarea {
+  min-height: 4rem; }
+
+label {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: .5rem; }
+
+hr {
+  border: 0;
+  border-top: .1rem solid #ddd;
+  margin: 2rem 0; }
+
+.container {
+  margin: 0 auto;
+  max-width: 112rem;
+  padding: 0 2rem;
+  position: relative; }
+
+.row {
+  display: flex;
+  padding: 0;
+  width: 100%;
+  flex-wrap: nowrap; }
+  .row.center {
+    align-items: center; }
+
+.ed {
+  display: block;
+  flex: 1 1 auto;
+  margin-left: 0;
+  max-width: 100%;
+  width: 100%; }
+
+@media (max-width: 40rem) {
+  .m-column {
+    flex-direction: column; } }
+
+@media (min-width: 40rem) {
+  .ed-1 {
+    max-width: 10%;
+    flex: 0 0 10%; }
+  .ed-2 {
+    max-width: 20%;
+    flex: 0 0 20%; }
+  .ed-3 {
+    max-width: 30%;
+    flex: 0 0 30%; }
+  .ed-4 {
+    max-width: 40%;
+    flex: 0 0 40%; }
+  .ed-5 {
+    max-width: 50%;
+    flex: 0 0 50%; }
+  .ed-6 {
+    max-width: 60%;
+    flex: 0 0 60%; }
+  .ed-7 {
+    max-width: 70%;
+    flex: 0 0 70%; }
+  .ed-8 {
+    max-width: 80%;
+    flex: 0 0 80%; }
+  .ed-9 {
+    max-width: 90%;
+    flex: 0 0 90%; }
+  .ed-10 {
+    max-width: 100%;
+    flex: 0 0 100%; } }

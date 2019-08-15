@@ -6,7 +6,7 @@ $tb: table
 
 //position
 $pr: relative
-$a: absolute
+$pa: absolute
 
 //general values
 $n: none
@@ -14,9 +14,9 @@ $no: no-repeat
 $u: unset
 $i: initial
 
-//font
+//font && if use google font please set value $googleFont.
 $googleFont: ''
-$font: ''
+$font: 'Roboto' !default
 $defaultRem: 5rem
 
 //color
@@ -33,6 +33,8 @@ $containerWidth: null
 $containerPadding: null
 $gridColumn: 10 !default
 $grid: 100% / $gridColumn
+//if set order 0, order disabled
+$order: 0 !default
 $gridGutter: 30px
-//sabit değişken lan
-$heading: 6
+//set headings. (max number 6)
+$heading: 6 !default

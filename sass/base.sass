@@ -11,7 +11,10 @@ html
 body
 	font-size: 1.6em
 	line-height: 1.6
-	font-family: 'Kodchasan', sans-serif
+	@if $googleFont != ''
+		font-family: $googleFont
+	@else
+		font-family: $font
 	color: #515151
 a
 	text-decoration: none

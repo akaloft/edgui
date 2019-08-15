@@ -1,6 +1,11 @@
 @import functions
 @import variables
 
+@if $order > 0
+    @for $i from 1 through $order
+        .order-#{$i}
+            order: $i
+
 .container
     margin: 0 auto
     @if $containerWidth and $containerPadding != null
@@ -26,9 +31,6 @@
 @media (max-width:40rem)
     .m-column
         flex-direction: column
-    @for $i from 1 through 3
-        .order-#{$i}
-            order: $i
 
 @media (min-width: 40rem)
     @for $i from 1 through $gridColumn
