@@ -6,6 +6,11 @@
         .order-#{$i}
             order: $i
 
+.full
+    @if $gridGutter > 0
+        margin-left: $gridGutter / - 2
+        margin-right: $gridGutter / -2
+
 .container
     margin: 0 auto
     @if $containerWidth and $containerPadding != null
@@ -14,13 +19,15 @@
         @include container(112rem,0 2rem)
     position: relative
 
+
 .row
     display: flex
     padding: 0
     width: 100%
-    flex-wrap: nowrap
-    &.center
-        align-items: center
+    flex-wrap: wrap
+    @if $gridGytter > 0
+        margin-right: $gridGutter / -2
+        margin-left: $gridGutter / -2
 .ed
     display: block
     flex: 1 1 auto

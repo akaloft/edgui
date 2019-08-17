@@ -188,7 +188,9 @@ html input[disabled] {
   display: flex;
   padding: 0;
   width: 100%;
-  flex-wrap: nowrap; }
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
   .row.center {
     align-items: center; }
 
@@ -206,31 +208,51 @@ html input[disabled] {
 @media (min-width: 40rem) {
   .ed-1 {
     max-width: 10%;
-    flex: 0 0 10%; }
+    flex: 0 0 10%;
+    padding-left: 15px;
+    padding-right: 15px; }
   .ed-2 {
     max-width: 20%;
-    flex: 0 0 20%; }
+    flex: 0 0 20%;
+    padding-left: 15px;
+    padding-right: 15px; }
   .ed-3 {
     max-width: 30%;
-    flex: 0 0 30%; }
+    flex: 0 0 30%;
+    padding-left: 15px;
+    padding-right: 15px; }
   .ed-4 {
     max-width: 40%;
-    flex: 0 0 40%; }
+    flex: 0 0 40%;
+    padding-left: 15px;
+    padding-right: 15px; }
   .ed-5 {
     max-width: 50%;
-    flex: 0 0 50%; }
+    flex: 0 0 50%;
+    padding-left: 15px;
+    padding-right: 15px; }
   .ed-6 {
     max-width: 60%;
-    flex: 0 0 60%; }
+    flex: 0 0 60%;
+    padding-left: 15px;
+    padding-right: 15px; }
   .ed-7 {
     max-width: 70%;
-    flex: 0 0 70%; }
+    flex: 0 0 70%;
+    padding-left: 15px;
+    padding-right: 15px; }
   .ed-8 {
     max-width: 80%;
-    flex: 0 0 80%; }
+    flex: 0 0 80%;
+    padding-left: 15px;
+    padding-right: 15px; }
   .ed-9 {
     max-width: 90%;
-    flex: 0 0 90%; }
+    flex: 0 0 90%;
+    padding-left: 15px;
+    padding-right: 15px; }
   .ed-10 {
     max-width: 100%;
-    flex: 0 0 100%; } }
+    flex: 0 0 100%;
+    padding-left: 15px;
+    padding-right: 15px; } }
